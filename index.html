@@ -6,5 +6,61 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <script src="JavaScript/table.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form">
+          <h1>Dynamic Table</h1>
+          <form>
+            <!-- Input start and end numbers of row -->
+            <fieldset>
+              <legend>Please enter the range of multiplier</legend>
+              <input
+                type="text"
+                id="row1"
+                placeholder="Start"
+                required="required"
+              />
+              <span class="row1"></span>
+              <input
+                type="text"
+                id="row2"
+                placeholder="End"
+                required="required"
+              />
+              <span class="row2"></span>
+              <br />
+            </fieldset>
+            <br />
+            <fieldset>
+              <!-- get the start and end numbers of col -->
+              <legend>Please enter the range of multiplicand</legend>
+              <input
+                type="text"
+                id="col1"
+                placeholder="Start"
+                required="required"
+              />
+              <span class="col1"></span>
+
+              <input
+                type="text"
+                id="col2"
+                placeholder="End"
+                required="required"
+              />
+              <span class="col2"></span>
+              <br />
+            </fieldset>
+            <br />
+          </form>
+          <!-- Create Submit button  -->
+          <button type="button" onclick="TableStart()">Generate Table</button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--This is where final table will go-->
+    <div id="table"></div>
+  </body>
 </html>
